@@ -1,0 +1,730 @@
+.wp-block-heading{
+    padding: 0;
+    font-size: 32px;
+    font-family: Geologica;
+    line-height: 32px;
+    font-weight: 400;
+    color: $main-green;
+    margin-bottom: 32px;
+}
+.wc-block-cart-items{
+    .wc-block-cart-items__header{
+        display: none;
+    }
+    .wc-block-cart-items__row{
+        display: grid;
+        grid-template-columns: 180px 280px 160px;
+        padding: 32px;
+        margin-bottom: 34px;
+        border-radius: 16px;
+        background: $container-black;
+        @media (max-width: $pc) {
+            padding: 22px;
+            grid-template-columns: 140px 240px 130px;
+        }
+        .wc-block-cart-item__image{
+            padding: 0 !important;
+            margin: 0 !important;
+            img{
+                max-width: 132px;
+                max-height: 112px;
+                border-radius: 8px;
+                width: auto !important;
+            }
+        }
+        .wc-block-cart-item__product{
+            padding: 0 !important;
+            margin: 0 !important;
+            @media (max-width: $pc) {
+                padding-left: 44px !important;
+            }
+            .wc-block-cart-item__wrap{
+                .wc-block-components-product-name{
+                    text-decoration: none;
+                    margin: 0;
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 28px;
+                    color: $main-green;
+                    text-transform: uppercase;
+                }
+                .wc-block-cart-item__prices{
+                    margin: 0;
+                    margin-top: 22px;
+                    .price{
+                        margin: 0;
+                        font-size: 22px;
+                        font-family: Geologica;
+                        line-height: 22px;
+                        font-weight: 400;
+                        color:  $main-green;
+                        del{
+                            color:  $date-gray;
+                        }
+                    }
+                }
+
+                .wc-block-components-product-badge{
+                    margin: 0;
+                    margin-top: 22px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 42px;
+                    max-width: 191px;
+                    width: 100%;
+                    border-radius: 8px;
+                    border: 1px solid $gray;
+                    margin-top: 22px;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 17px;
+                    font-weight: 400;
+                    color:  $gray;
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                .wc-block-components-product-metadata{
+                    margin: 0;
+                    margin-top: 8px;
+                    .wc-block-components-product-metadata__description{
+                        margin: 0;
+                        font-size: 12px;
+                        font-family: Geologica;
+                        line-height: 13px;
+                        font-weight: 400;
+                        color:  $date-gray;
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    .wc-block-components-product-details{
+                        display: none;
+                    }
+                }
+                .wc-block-cart-item__quantity{
+                    .wc-block-components-quantity-selector{
+                        border: 1px solid $gray !important;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 22px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 40px;
+                        max-width: 136px;
+                        background: $container-black;
+                        border-radius: 8px;
+                        font-size: 22px;
+                        background: $container-black;
+                        color: $gray;
+                        border: none;
+                        .wc-block-components-quantity-selector__input{
+                            padding: 0;
+                        }
+                    }
+                    .wc-block-cart-item__remove-link{
+                        margin: 0;
+                        margin-top: 22px;
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 100;
+                        color: $gray;
+                        cursor: pointer;
+                        border-bottom: 1px solid $gray;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+        .wc-block-cart-item__total{
+            padding: 0 !important;
+            margin: 0 !important;
+            .wc-block-cart-item__total-price-and-sale-badge-wrapper{
+                display: flex;
+                align-items: center;
+                .price{
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 22px;
+                    font-weight: 400;
+                    color: $main-green;
+                }
+                .wc-block-components-product-badge{
+                    margin: 0;
+                    margin-top: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 17px;
+                    font-weight: 400;
+                    color:  $gray;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+.wc-block-components-sidebar{
+    border-radius: 8px;
+    padding: 0;
+    padding: 22px;
+    background: $container-black;
+    height: max-content;
+    @media (max-width: $tablet) {
+        padding: 22px !important;
+    }
+    .wp-block-woocommerce-cart-order-summary-block{
+
+        .wp-block-woocommerce-cart-order-summary-heading-block, 
+        .wp-block-woocommerce-cart-order-summary-coupon-form-block,
+        .wp-block-woocommerce-cart-order-summary-subtotal-block{
+            display: none !important;
+        }
+        .wc-block-components-totals-shipping{
+            .wc-block-components-totals-item{
+                border: none !important;
+                .wc-block-components-totals-item__label{
+                    font-size: 16px;
+                    font-family: Geologica;
+                    line-height: 32px;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                .wc-block-formatted-money-amount{
+                    font-size: 26px;
+                    font-family: Geologica;
+                    line-height: 32px;
+                    font-weight: 400;
+                    color:  $main-green;
+                }
+                .wc-block-components-totals-item__value{
+                    .wc-block-components-totals-shipping__change-address__link{
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 100;
+                        color:  $main-green;
+                        border-bottom: 1px solid $main-green;
+                    }
+                }
+                .wc-block-components-totals-item__description{
+                    .wc-block-components-totals-item__description{
+                        display: none;
+                    }
+                    .wc-block-components-shipping-address{
+                        margin: 0;
+                        margin-top: 22px;
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 400;
+                        color:  $gray;
+                    }
+                    .wc-block-components-totals-shipping__change-address__link{
+                        margin: 0;
+                        margin-top: 8px;
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 100;
+                        color:  $main-green;
+                        border-bottom: 1px solid $main-green;
+                    }
+                }
+            }
+            .wc-block-components-totals-shipping__fieldset{
+                padding-bottom: 22px;
+                .wc-block-components-shipping-rates-control{
+                    margin: 0;
+                    .wc-block-components-shipping-rates-control__package{
+                        padding: 0;
+                        .wc-block-components-radio-control__option{
+                            padding-left: 40px;
+                            @media (max-width: $tablet) {
+                                padding-left: 60px;
+                            }
+                            input{
+                                border-radius: 50%;
+                                border: 1px solid $main-green;
+                                background: $container-black;
+                            }
+                            input::before{
+                                background:  $main-green;
+                            }
+
+                            .wc-block-components-radio-control__option-layout{
+                                font-family: Geologica;
+                                .wc-block-components-radio-control__label-group{
+                                    font-size: 14px !important;
+                                    line-height: 14px;
+                                    font-weight: 400;
+                                    color:  $main-green;
+                                }
+                                .wc-block-components-radio-control__description-group{
+                                    font-size: 12px !important;
+                                    line-height: 14px;
+                                    font-weight: 400;
+                                    color:  $gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .wc-block-components-shipping-calculator{
+                padding: 0 !important;
+                padding-bottom: 22px !important;
+                .wc-block-components-shipping-calculator-address{
+                    .wc-block-components-address-form{
+                        label{
+                            font-size: 12px;
+                            font-family: Geologica;
+                            font-weight: 400;
+                            color:  $gray;
+                        }
+                        input{
+                            border: none;
+                            border-radius: 8px;
+                            background: $text-area;
+                            color: $main-green;
+                        }
+                    }
+                    .components-button{
+                        margin: 0;
+                        margin-top: 22px;
+                        background: $main-green;
+                        color: $white;
+                        text-decoration: none;
+                        padding: 12px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        width: -webkit-fill-available;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        border-radius: 8px;
+                        border: none;
+                    }
+                }
+            }
+        }
+        .wc-block-components-totals-wrapper{
+            border: none;
+            padding: 0;
+            .wc-block-components-totals-item{
+                padding: 0;
+                border-bottom: 1px solid $hr-color;
+                margin: 0;
+                padding-bottom: 22px;
+                .wc-block-components-totals-item__label{
+                    font-size: 16px;
+                    font-family: Geologica;
+                    line-height: 32px;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                .wc-block-formatted-money-amount{
+                    font-size: 26px;
+                    font-family: Geologica;
+                    line-height: 32px;
+                    font-weight: 400;
+                    color:  $main-green;
+                }
+            }
+        }
+    }
+    .components-button{
+        margin: 0;
+        margin-top: 22px;
+        background: $main-green;
+        color: $white;
+        text-decoration: none;
+        padding: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        width: -webkit-fill-available;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-radius: 8px;
+    }
+
+    .other-order-options {
+        margin: 0;
+        margin-top: 22px;
+        font-size: 14px;
+        font-family: Geologica;
+        line-height: 14px;
+        font-weight: 400;
+        color: $gray;
+    }
+    .other-order-options::before,
+    .other-order-options::after {
+        content: "";
+        display: inline-block;
+        width: 40%;
+        height: 1px; 
+        background: $hr-color; 
+        vertical-align: middle;
+        @media (max-width: 305px) {
+            width: 35%;
+        }
+    }
+    .other-order-options::before {
+        margin-right: 11px; 
+    }
+    .other-order-options::after {
+        margin-left: 11px;
+    }
+    .text-phone{
+        margin: 0;
+        margin-top: 22px;
+        font-size: 12px;
+        font-family: Geologica;
+        line-height: 18px;
+        font-weight: 400;
+        color: $text-cart-phone;
+    }
+    .phone-cart{
+        text-decoration: none;
+        margin: 0;
+        margin-top: 12px;
+        font-size: 14px;
+        font-family: Geologica;
+        line-height: 17px;
+        font-weight: 400;
+        color: $main-green;
+        border: 1px solid $main-green;
+        height: 42px;
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-social-networks{
+        margin: 0;
+        margin-top: 32px;
+        font-size: 12px;
+        font-family: Geologica;
+        line-height: 18px;
+        font-weight: 400;
+        color: $text-cart-phone;
+    }
+    .social-icons{
+        margin: 0;
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+
+
+}
+.wp-block-woocommerce-cart-cross-sells-block{
+    display: none;
+}
+.wp-block-woocommerce-empty-cart-block{
+    h2{
+        margin-top: 32px;
+        font-size: 32px;
+        font-family: Geologica;
+        line-height: 32px;
+        font-weight: 400;
+        color:  $main-green;
+    }
+    h3{
+        margin-top: 70px;
+        font-size: 32px;
+        font-family: Geologica;
+        line-height: 32px;
+        font-weight: 400;
+        color:  $gray;
+        margin-bottom: 70px !important;
+    }
+    h3::before{
+        font-size: 24px;
+        margin-bottom: 25px !important;
+    }
+}
+
+.card-header {
+    margin-top: 32px;
+	.card-title {
+        font-size: 32px;
+        font-family: Geologica;
+        line-height: 32px;
+        font-weight: 400;
+        color: $main-green;
+	}
+}
+.card-content {
+    margin-top: 32px;
+	margin-bottom: 160px;
+	.col-md-9 {
+		.remove-product {
+			@media (max-width: 1050px) {
+				position: relative;
+				left: 10px;
+				top: -3px;
+			}
+		}
+		.cart-item {
+			display: flex;
+			flex-direction: column;
+			padding: 32px;
+			border-radius: 16px;
+            background: $container-black;
+            @media (max-width: $mobile) {
+                padding: 26px 20px;
+            }
+			&:not(:first-of-type) {
+				margin-top: 34px;
+			}
+			.item-content {
+				display: flex;
+				.product-img {
+					margin-right: 44px;
+                    @media (max-width: $mobile) {
+						margin-right: 16px;
+					}
+					img {
+						max-width: 132px;
+						max-height: 112px;
+						border-radius: 8px;
+					}
+				}
+				.product-details--text {
+					.product-title {
+                        margin: 0;
+						font-size: 22px;
+                        font-family: Geologica;
+                        line-height: 28px;
+                        color: $main-green;
+                        text-transform: uppercase;
+					}
+                    .product-weight {
+                        margin: 0;
+						font-size: 16px;
+                        font-family: Geologica;
+                        line-height: 28px;
+                        font-weight: 400;
+                        color: $gray;
+					}
+                    .product-price{
+                        margin: 0;
+                        margin-top: 22px;
+                        font-size: 22px;
+                        font-family: Geologica;
+                        line-height: 22px;
+                        font-weight: 400;
+                        color:  $main-green;
+                        .regular-price{
+                            color:  $date-gray;
+                            margin-right: 8px;
+                        }
+                    }
+                    .savings-box {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 42px;
+                        max-width: 191px;
+                        width: 100%;
+                        border-radius: 8px;
+                        border: 1px solid $gray;
+                        margin-top: 22px;
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 17px;
+                        font-weight: 400;
+                        color:  $gray;
+                    }
+                    .product-short-description{
+                        margin: 0;
+                        margin-top: 8px;
+						font-size: 12px;
+                        font-family: Geologica;
+                        line-height: 13px;
+                        font-weight: 400;
+                        color:  $date-gray;
+                    }
+                    .product-storage{
+                        margin: 0;
+                        margin-top: 22px;
+						font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 18px;
+                        font-weight: 400;
+                        color:   $gray;
+                    }
+
+				}
+				
+				.product-details--quantity {
+					.quantity {
+                        margin: 0;
+                        margin-top: 22px;
+                    
+                        .quantity-buttons {
+                            padding: 12px 15px;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 40px;
+                            max-width: 136px;
+                            border: 1px solid $gray;
+                            background: $container-black;
+                            border-radius: 8px;
+                    
+                            @media (max-width: $tablet) {
+                                width: 100%;
+                            }
+                    
+                            .quantity-minus, 
+                            .quantity-input, 
+                            .quantity-plus {
+                                font-size: 22px;
+                                background: $container-black;
+                                color: $gray;
+                                border: none;
+                            }
+                    
+                            .quantity-input {
+                                max-width: 60px;
+                                display: flex;
+                                text-align: center;
+                                -moz-appearance: textfield; /* Firefox */
+                                appearance: textfield; /* Modern browsers */
+                                &:focus-visible {
+                                    outline: none;
+                                }
+                                /* Remove the default spin buttons in WebKit browsers */
+                                &::-webkit-outer-spin-button,
+                                &::-webkit-inner-spin-button {
+                                    -webkit-appearance: none;
+                                    margin: 0;
+                                }
+                                /* Remove the default spin buttons in Firefox */
+                                &[type=number] {
+                                    -moz-appearance: textfield; /* Firefox */
+                                }
+                            }
+                            .quantity-input {
+                                outline: none;
+                                border: none; 
+                            }
+                        }
+                    }
+				}
+                .delete-item--block {
+                    margin-top: 22px;
+                
+                    .remove-product {
+                        text-decoration: none;
+                        font-size: 12px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 100;
+                        color: $gray;
+                        cursor: pointer;
+                        border-bottom: 1px solid $gray;
+                        margin-top: 2px;
+                    }
+                }
+			}
+		}
+	}
+
+	.col-md-3 {
+		@media (max-width: 850px) {
+			padding: 6px;
+		}
+		@media (max-width: 767px) {
+			padding-right: calc(var(--bs-gutter-x)* .5);
+			padding-left: calc(var(--bs-gutter-x)* .5);
+			margin-top: 17px;
+		}
+		.cart-summary {
+			padding: 22px 22px 32px;
+			background: $container-black;
+			border-radius: 8px;
+			margin-bottom: 22px;
+            .summary{
+                display: flex;
+                @media (max-width: $tablet) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .at-all {
+                    margin: 0;
+                    font-family: Geologica;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: $gray;
+                }
+                .total-price {
+                    margin: 0;
+                    margin-left: auto;
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    color: $main-green;
+                    @media (max-width: $tablet) {
+                        margin: 0;
+                    }
+                }
+            }
+            hr{
+                border: 2px solid $hr-color;
+                margin: 0;
+                margin-top: 22px;
+            }
+			.checkout-button {
+                margin-top: 22px;
+				background: $main-green;
+				color: $white;
+				text-decoration: none;
+				padding: 12px;
+				font-weight: 400;
+				font-size: 14px;
+				width: -webkit-fill-available;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				border-radius: 8px;
+			}
+		}
+		.card-back--btn {
+			display: flex;
+			width: -webkit-fill-available;
+			align-items: center;
+			border: none;
+			padding: 12px;
+			border-radius: 8px;
+            border: 1px solid $main-green;
+			color: $main-green;
+			font-size: 14px;
+			font-weight: 600;
+			justify-content: center;
+			text-decoration: none;
+			background: $black;
+			cursor: pointer;
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+}

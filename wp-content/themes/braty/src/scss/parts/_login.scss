@@ -1,0 +1,299 @@
+.woocommerce{
+
+    p{
+        margin: 0;
+        margin-top: 20px;
+        font-size: 18px ;
+        font-family: 'Geologica', sans-serif ;
+        font-weight: 400;
+        color:  $gray;
+        line-height: 20px;
+    }
+    .woocommerce-notices-wrapper{
+        .woocommerce-error{
+            margin: 0;
+            background: #F44336;
+            border-radius: 8px;
+
+            li{
+                color: $white;
+                font-size: 18px ;
+                font-family: 'Geologica', sans-serif ;
+                font-weight: 400;
+                line-height: 32px;
+
+                strong{
+                    font-weight: 400;
+                }
+
+                a{
+                    color: $agree-terms ;
+                }
+            }
+        }
+        .woocommerce-error::before{
+            color: $white;
+            font-size: 18px;
+            top: 0.8em;
+            left: 1em;
+        }
+    }
+
+    .u-columns{
+        margin-top: 22px;
+        padding: 66px;
+        background: $container-black;
+        border-radius: 16px;
+        @media (max-width: $mobileSmall) {
+            padding: 20px 26px;
+        }
+        .u-column1{
+            h2{
+                margin: 0;
+                font-size: 22px ;
+                font-family: 'Geologica', sans-serif ;
+                font-weight: 400;
+                color: $main-green;
+                line-height: 22px;
+            }
+            
+            .woocommerce-form{
+                margin: 0;
+                padding: 0;
+                margin-top: 7px;
+                border: none;
+                
+                .woocommerce-form-row{
+                    margin: 0 !important;
+                    padding: 0;
+
+                    label{
+                        margin-top: 12px;
+                        font-size: 14px ;
+                        font-family: 'Geologica', sans-serif ;
+                        font-weight: 400;
+                        color: $gray;
+                        line-height: 17px;
+                    }
+                    label.error {
+                        color: #F44336;
+                    }
+                    input{
+                        margin-top: 8px;
+                        height: 42px;
+                        padding: 12px;
+                        border-radius: 8px;
+                        background: $comment-empty-star;
+                        color: $main-green;
+                        border: none;
+                    }
+                    input.error {
+                        border: 1px solid #F44336;
+                    }
+                    .show-password-input{
+                        margin-top: 6px;
+                    }
+                    .show-password-input::after{
+                        color: $main-green !important;
+                    }
+                }
+
+                .form-row{
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 19px;
+
+                    .woocommerce-form__label-for-checkbox{
+                        input{
+                            border: none;
+                            border-radius: 8px;
+                            background: $text-area;
+                            color: $main-green;
+                        }
+                        span{
+                            font-size: 14px ;
+                            font-family: 'Geologica', sans-serif ;
+                            font-weight: 400;
+                            color: $remember;
+                            line-height: 28px;
+                        }
+                    }
+
+                    .woocommerce-form-login__submit{
+                        margin-top: 19px;
+                        background: $main-green;
+                        border-radius: 8px;
+                        height: 42px;
+                        width: 100%;
+                        color: $white;
+                        font-size: 14px ;
+                        font-family: 'Geologica', sans-serif ;
+                        font-weight: 400;
+                        line-height: 17px;
+                    }
+                }
+                .woocommerce-LostPassword {
+                    margin: 0;
+                    margin-top: 19px;
+                    
+                    a {
+                        color: $main-green;
+                        font-size: 12px;
+                        font-family: 'Geologica', sans-serif;
+                        font-weight: 400;
+                        line-height: 12px;
+                        text-decoration: none;
+                        border-bottom: 1px dashed $main-green;
+                    }
+                }
+            }
+        }
+        .u-column2{
+            @media (max-width: $mobile) {
+                margin-top: 54px;
+            }
+            h2{
+                margin: 0;
+                font-size: 22px ;
+                font-family: 'Geologica', sans-serif ;
+                font-weight: 400;
+                color: $main-green;
+                line-height: 22px;
+            }
+            .woocommerce-form{
+                margin: 0;
+                padding: 0;
+                margin-top: 7px;
+                border: none;
+
+                .woocommerce-form-row{
+                    margin: 0 !important;
+                    padding: 0;
+
+                    label{
+                        margin-top: 12px;
+                        font-size: 14px ;
+                        font-family: 'Geologica', sans-serif ;
+                        font-weight: 400;
+                        color: $gray;
+                        line-height: 17px;
+                    }
+                    label.error {
+                        color: #F44336;
+                    }
+                    input{
+                        margin-top: 8px;
+                        height: 42px;
+                        padding: 12px;
+                        border-radius: 8px;
+                        background: $comment-empty-star;
+                        color: $main-green;
+                        border: none;
+                    }
+                    input.error {
+                        border: 1px solid #F44336;
+                    }
+                }
+                p{
+                    margin: 0;
+                    margin-top: 12px;
+                    font-size: 14px ;
+                    font-family: 'Geologica', sans-serif ;
+                    font-weight: 400;
+                    color: $comment-gray;
+                    line-height: 20px;
+                }
+                .woocommerce-privacy-policy-text{
+                    p{
+                        margin: 0;
+                        margin-top: 20px;
+                        font-size: 14px ;
+                        font-family: 'Geologica', sans-serif ;
+                        font-weight: 400;
+                        color: $comment-gray;
+                        line-height: 20px;
+
+                        a{
+                            color: $main-green;
+                        }
+                    }
+                }
+                .woocommerce-form-register__submit{
+                    margin-top: 19px;
+                    background: $main-green;
+                    border-radius: 8px;
+                    height: 42px;
+                    width: 100%;
+                    color: $white;
+                    font-size: 14px ;
+                    font-family: 'Geologica', sans-serif ;
+                    font-weight: 400;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+    .woocommerce-ResetPassword{
+        margin-top: 22px;
+        padding: 66px;
+        background: $container-black;
+        border-radius: 16px;
+        p{
+            margin: 0;
+            margin-top: 20px;
+            font-size: 18px ;
+            font-family: 'Geologica', sans-serif ;
+            font-weight: 400;
+            color:  $gray;
+            line-height: 20px;
+        }
+        .woocommerce-form-row{
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            font-size: 14px ;
+            font-family: 'Geologica', sans-serif ;
+            font-weight: 400;
+            color: $gray;
+            line-height: 17px;
+
+            label.error {
+                color: #F44336;
+            }
+            input{
+                margin-top: 8px;
+                height: 42px;
+                padding: 12px;
+                border-radius: 8px;
+                background: $comment-empty-star;
+                color: $main-green;
+                border: none;
+            }
+            input.error {
+                border: 1px solid #F44336;
+            }
+        }
+        .woocommerce-Button{
+            margin-top: 19px;
+            background: $main-green;
+            border-radius: 8px;
+            height: 42px;
+            max-width: 462px;
+            width: 100%;
+            color: $white;
+            font-size: 14px ;
+            font-family: 'Geologica', sans-serif ;
+            font-weight: 400;
+            line-height: 17px;
+            @media (max-width: $pc) {
+                max-width: 377px;
+            }
+            @media (max-width: $tablet) {
+                max-width: 265px;
+            }
+            @media (max-width: $mobile) {
+                max-width: 462px;
+            }
+        }
+    }
+}

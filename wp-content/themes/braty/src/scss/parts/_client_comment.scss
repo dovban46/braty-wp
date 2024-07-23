@@ -1,0 +1,319 @@
+.client-comments {
+        margin-top: 160px;
+
+        .container{
+                width: $main-width;
+
+                @media (max-width: $mobileSmall) {
+                            width: 100%;
+                }
+        }
+
+        h3{
+                font-size: 22px !important;
+                font-family: 'Geologica', sans-serif !important;
+                font-weight: 400px !important;
+                color: $main-green !important;
+                line-height: 28px !important;
+        }
+
+        .swiper-comment {
+                overflow: hidden;
+
+                .comment__pagination {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 70px;
+                }
+                
+                .swiper-slide {
+                        @media(max-width: 480px) {
+                        display: flex;
+                        justify-content: center;
+                        }
+                }
+        }
+      
+        .client-comments-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+        }
+      
+        .comment-client {
+                margin-bottom: 32px;
+                margin-top: 22px;
+                padding: 16px 22px 31px 22px;
+                border-radius: 8px; 
+                box-sizing: border-box;
+                background: $container-black;
+                font-weight: 400;
+                @media (max-width: 480px) {
+                        flex-direction: column;
+                }
+
+                p {
+                        margin: 0;
+                        color: $gray;
+                }
+        
+                .rating-date {
+                        align-items: center;
+                        margin-top: 12px;
+        
+                        .rating {
+                                font-family: 'Geologica', sans-serif;
+                                font-size: 12px;
+                                margin-top: 26px; 
+
+
+                        }
+        
+                        .date {
+                                color: $date-gray;
+                                font-family: 'Geologica', sans-serif;
+                                font-size: 12px; 
+                                margin-left: auto;
+                        }
+                }
+        
+                .comment {
+                        margin-top: 26px; 
+                        font-family: 'Geologica', sans-serif;
+                        font-size: 14px; 
+                        color: $gray;
+                }
+        
+                .comment-overflow {
+                        display: none; 
+                }
+        
+                .show-more-btn {
+                        font-family: 'Geologica', sans-serif;
+                        font-size: 12px; 
+                        color: $gray; 
+                        border: none;
+                        background: none;
+                        cursor: pointer;
+                        font-weight: 100;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 7px;
+                        outline: none;
+        
+                        &::after {
+                                content: "";
+                                display: block;
+                                border-bottom: 1px dashed $gray; 
+                                margin-top: 1px; 
+                        }
+                }
+        
+                .rating {
+                        align-items: center;
+                        gap: 10px;
+                        .stars {
+                                gap: 5px;
+                        }
+                        .comment-star-rating {
+                                font-size: 20px;
+                                color: $empty-star;                              
+                                
+                                &.filled {
+                                        color: $main-green; 
+                                }
+                        }
+                        .comment-star {
+                                font-size: 20px;
+                                color: $empty-star;                              
+                        }
+                }
+        }  
+
+        .show-review-block {
+                display: flex;
+                flex-direction: column;
+                margin-top: 24px;
+                margin: 0 auto; 
+                #show-review-form {
+                        font-weight: 400;
+                        width: 224px;
+                        height: 36px;
+                        line-height: 16px;
+                        border-radius: 8px;
+                        border: 2px solid $main-green;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Geologica;
+                        font-size: 14px;
+                        color: $main-green;
+                        cursor: pointer;
+                }
+        }
+        #custom-review-form {
+                display: none;
+                width: 1140px;
+                width: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                margin-top: 32px;
+                background: $container-black;;
+                border-radius: 16px;
+                padding: 44px 212px;
+                font-family: Geologica;
+                @media (max-width: $tablet) {
+                        padding: 20px 26px;
+                }
+                h3 {
+                        color: $main-green;
+                        font-weight: 400;
+                        font-size: 22px;
+                        line-height: 22px;
+                        margin: 0 auto;
+
+                }
+                .rating {
+                        margin: 0 auto;
+                        margin-top: 22px;
+                        display: flex;
+                        flex-direction: column; 
+                        align-items: center;
+                        
+                        .your-rating {
+                                margin-bottom: 12px;
+                                color: $comment-gray;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 16px;
+                        }
+                        #rating-stars {
+                                display: flex; 
+                                gap: 7px; 
+                        }
+                        
+                        .star {
+                                width: 30px;
+                                height: 30px;
+                                font-size: 30px; 
+                                color: $comment-empty-star; 
+                                cursor: pointer; 
+                        }
+                        .star.selected {
+                                color: $main-green; 
+                        }
+                }
+                label {
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        line-height: 16px;
+                        font-weight: 400;
+                        color: $main-green;
+                }
+                input[type="text"],
+                input[type="tel"],
+
+                textarea {
+                        height: 36px;
+                        border-radius: 8px;
+                        border: none;
+                        background: $comment-empty-star;
+                        padding: 10px;
+                        color: $main-green; 
+                }
+
+                textarea {
+                        height: 106px;
+                        resize: none;
+                        border: none;
+                        background: $comment-empty-star;
+                        color: $main-green; 
+                }
+
+                input[type="text"]::placeholder,
+                input[type="tel"]::placeholder,
+                textarea::placeholder {
+                        color: $comment-gray;
+                        font-size: 14px;
+                        line-height: 16px;
+                        font-weight: 400;
+                        padding-top: 10px;
+                        padding-left: 22px;
+                }
+                input[type="text"]:focus,
+                input[type="tel"]:focus,
+                textarea:focus {
+                        outline: none; 
+                        background: $comment-empty-star; 
+                }
+
+                p {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                }
+
+                .one-line {
+                        display: flex;
+                        width: 100%;
+                        gap: 16px;
+                        margin-top: 44px;
+                }
+
+                @media (max-width: 580px) {
+                        .one-line {
+                                flex-direction: column;
+                                gap: 0;
+                        }
+                }
+                .save-info {
+                        margin-top: 44px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center; 
+                }
+                
+                .save-info input[type="radio"] {
+                        margin-right:6px;
+                        width: 16px; 
+                        height: 16px; 
+                        appearance: none; 
+                        border: 1px solid $main-green; 
+                        border-radius: 50%; 
+                        outline: none; 
+                        cursor: pointer; 
+                }
+                
+                .save-info input[type="radio"]:checked {
+                        background-color: $main-green; 
+                }
+                
+                .save-info label {
+                        font-family: Geologica;
+                        margin: 0;
+                        font-size: 14px; 
+                        color: $comment-gray; 
+                }
+                
+                
+                .form-submit {
+                        width: fit-content;
+                        margin: 0 auto;
+                        margin-top: 12px;
+                        @media (max-width: 480px) {
+                                        width: 100%;
+                        }
+                        input {
+                                font-family: Geologica;
+                                background: $container-black;
+                                border: 2px solid $main-green;
+                                padding: 10px 44px;
+                                color: $main-green;
+                                border-radius: 8px;
+                                font-size: 14px;
+                                font-weight: 400;
+                        }
+                }
+        }
+  }

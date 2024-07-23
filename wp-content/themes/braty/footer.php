@@ -11,21 +11,60 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'braty' ) ); ?>">
+<footer class="footer ">
+	<div class="container">
+       <div class="footer-top">
+			<img src="<?php the_field('footer_logo', 'option'); ?>" alt="img" class="footer-logo">
+          
+		
+			<div class="nav-block">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'braty' ), 'WordPress' );
+				wp_nav_menu(array(
+					'theme_location' => 'Main-footer-menu',
+					'container' => 'nav',
+					'container_class' => 'main-menu--footer',
+					'menu_class' => 'nav-menu',
+				));
 				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'braty' ), 'braty', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+			</div>
+
+
+
+        	<div class="contacts-block">
+				<div class="contacts-items">
+					<a href="tel:<?php the_field('phone', 'option'); ?>" class="contact-item--phone item">
+						<img src="<?php the_field('phone_logo', 'option'); ?>" alt="img" class="img">
+						<p class="phone"><?php the_field('footer_phone', 'option'); ?></p>
+					</a>
+				</div>  
+
+				<div class="bot-items">
+					<a href="<?php the_field('footer_instagram_link', 'option'); ?>" class="item">
+						<img src="<?php the_field('footer_instagram_logo', 'option'); ?>" alt="img" class="img">
+					</a>
+					<a href="<?php the_field('footer_facebook_link', 'option'); ?>" class="item">
+						<img src="<?php the_field('footer_facebook_logo', 'option'); ?>" alt="img" class="img">
+					</a>
+					<a href="<?php the_field('footer_tik_tok_link', 'option'); ?>" class="item">
+						<img src="<?php the_field('footer_tik_tok_logo', 'option'); ?>" alt="img" class="img">
+					</a>
+				</div>
+
+          	</div>
+    	</div>
+	</div>
+
+
+	<div class="footer-bottom">
+		<div class="container">
+			<p><?php the_field('footer_name', 'option'); ?>©
+				<span><?php the_field('footer_years', 'option'); ?></span>
+			</p>
+		</div>
+	</div>  
+</footer>
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

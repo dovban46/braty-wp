@@ -1,0 +1,112 @@
+.question {
+    margin-top: 160px;
+
+    .container{
+        width: $main-width;
+        @media (max-width: $mobileSmall) {
+                width: 100%;
+        }
+
+        .question-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+        
+                .question-form {
+                        width: 1140px;
+                        width: 100%;
+                        margin: 0 auto;
+                        flex-direction: column;
+                        background: $container-black;;
+                        border-radius: 16px;
+                        padding: 88px 183px;
+                        font-family: Geologica;
+                        @media (max-width: $tablet) {
+                                padding: 20px 26px;
+                        }
+                        label {
+                                font-size: 14px;
+                                line-height: 16px;
+                                font-weight: 400;
+                                color: $main-green;
+                        }
+        
+                        .custom_name, .custom_phone, .custom_comment {
+                                margin-top: 12px;
+                                height: 36px;
+                                border-radius: 8px;
+                                width: 100% !important;
+                                max-width: 100%;
+                                border: none;
+                                background: $comment-empty-star;
+                                padding: 10px;
+                                color: $main-green; 
+                        }
+        
+                        .custom_comment  {
+                                height: 89px;
+                                resize: none;
+                        }
+        
+                        .custom_name::placeholder,
+                        .custom_phone::placeholder,
+                        .custom_comment::placeholder {
+                                color: $comment-gray;
+                                font-size: 14px;
+                                line-height: 16px;
+                                font-weight: 400;
+                                padding-top: 10px;
+                                padding-left: 21px;
+                        }
+                        .custom_name:focus,
+                        .custom_phone:focus,
+                        .custom_comment:focus {
+                                outline: none; 
+                                background: $comment-empty-star; 
+                        }
+        
+                        p {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        }
+        
+                        .one-line {
+                        display: flex;
+                        width: 100%;
+                        gap: 16px;
+                        margin-top: 44px;
+                        }
+        
+                        @media (max-width: 580px) {
+                                .one-line {
+                                        flex-direction: column;
+                                        gap: 0;
+                                }
+                        }
+                        
+                        .form-submit {
+                                width: fit-content;
+                                margin: 0 auto;
+                                margin-top: 44px;
+                                @media (max-width: 480px) {
+                                    width: 100%;
+                                }
+                                .submit_custom_review {
+                                        font-family: Geologica;
+                                        background: $container-black;
+                                        border: 2px solid $main-green;
+                                        padding: 10px 44px;
+                                        color: $main-green;
+                                        border-radius: 8px;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                }    
+                        }
+                        .wpcf7-response-output{
+                                color: white;
+                        }
+                }
+            }
+        }
+}

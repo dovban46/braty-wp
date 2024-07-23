@@ -1,0 +1,737 @@
+.wp-block-woocommerce-checkout{
+    padding: 0 !important;
+
+    .wc-block-components-main{
+        margin-right: 18px !important;
+        padding: 32px 23px !important;
+        border-radius: 16px;
+        background: $container-black;
+        width: 63.38% !important;
+        @media (max-width: $pc) {
+            margin-right: 10px !important;
+        }
+        @media (max-width: $tablet) {
+            margin-top: 44px !important;
+            width: 100% !important;
+        }
+        .wc-block-checkout__contact-fields{
+            padding: 0;
+            .wc-block-components-checkout-step__heading{
+                margin: 0;
+                margin-bottom: 30px;
+                h2 {
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 27px;
+                    font-weight: 400;
+                    color:  $remember;
+                }
+                h2::before{
+                    display: none;
+                }
+                span{
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 16px;
+                    font-weight: 400;
+                    color:  $gray;
+                    a{
+                        text-decoration: none;
+                        color: $main-green;
+                        border-bottom: 1px solid $main-green;
+                    }
+                }
+            }
+            .wc-block-components-checkout-step__container{
+                .wc-block-components-address-form{
+                    margin: 0;
+                    .wc-block-components-text-input{
+                        margin: 0;
+                        input{
+                            margin: 0;
+                            border: none;
+                            border-radius: 8px;
+                            background: $text-area;
+                            color: $main-green;
+                        }
+                        label{
+                            font-size: 12px;
+                            font-family: Geologica;
+                            font-weight: 400;
+                            color:  $gray;
+                        }
+                    }
+
+                    .wc-block-checkout__create-account{
+                        margin: 0;
+                        margin-top: 16px;
+                        label{
+                            input{
+                                border-radius: 50%;
+                                border: 1px solid $main-green;
+                                background: $container-black;
+                            }
+                            svg{
+                                color: $main-green !important;
+                                fill: $main-green !important;
+
+                            }
+                            span{
+                                font-size: 14px;
+                                font-family: Geologica;
+                                line-height: 28px;
+                                font-weight: 400;
+                                color:  $remember;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .wc-block-checkout__shipping-fields{
+            padding: 0;
+            margin-top: 44px;
+            .wc-block-components-checkout-step__heading{
+                margin: 0;
+                margin-bottom: 30px;
+                h2 {
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 27px;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                h2::before{
+                    display: none;
+                }
+            }
+            .wc-block-components-address-address-wrapper{
+                margin: 0;
+                .wc-block-components-address-card{
+                    border: none;
+                    padding: 0;
+                    address{
+                        .wc-block-components-address-card__address-section{
+                            font-size: 22px;
+                            font-family: Geologica;
+                            line-height: 27px;
+                            font-weight: 400;
+                            color:   $main-green;
+                        }
+                        span{
+                            font-size: 14px;
+                            font-family: Geologica;
+                            line-height: 27px;
+                            font-weight: 400;
+                            color:   $gray;
+                        }
+
+                    }
+                    .wc-block-components-address-card__edit{
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 400;
+                        color:  $main-green;
+                        border-bottom: 1px solid $main-green;
+                    }
+                }
+
+                .wc-block-components-address-form-wrapper{
+                    .wc-block-components-address-form{
+                        .wc-block-components-text-input{
+                            input{
+                                border-radius: 8px;
+                                background: $text-area;
+                                color: $main-green;
+                                border: none;
+                            }
+                            label{
+                                font-size: 12px;
+                                font-family: Geologica;
+                                font-weight: 400;
+                                color:  $gray;
+                            }
+                        }
+                        .wc-block-components-address-form__country,
+                        .wc-block-components-combobox{
+                            label{
+                                font-size: 12px;
+                                font-family: Geologica;
+                                font-weight: 400;
+                                color:  $gray;
+                            }
+                            input{
+                                border: none;
+                                border-radius: 8px;
+                                background: $text-area;
+                                color: $main-green;
+                            }
+                        }
+                    }
+                }
+            }
+            .wc-block-components-checkbox {
+                label{
+                    display: flex;
+                    align-items: center;
+                    input{
+                        border-radius: 50%;
+                        border: 1px solid $main-green;
+                        background: $container-black;
+                    }
+                    svg{
+                        color: $main-green !important;
+                        fill: $main-green !important;
+                        top: 0;
+                        @media (max-width: 487px) {
+                            top: 4px;
+                        }
+                        @media (max-width: 303px) {
+                            top:11px;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 400;
+                        color:  $gray;
+                    }
+                }
+            }
+        }
+
+        .wc-block-checkout__billing-fields{
+            padding: 0;
+            margin-top: 44px;
+            .wc-block-components-checkout-step__heading{
+                margin: 0;
+                margin-bottom: 30px;
+                h2 {
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 27px;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                h2::before{
+                    display: none;
+                }
+            }
+            .wc-block-components-checkout-step__container{
+                .wc-block-components-checkout-step__description{
+                    margin: 0;
+                    margin-bottom: 12px;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 14px;
+                    font-weight: 400;
+                    color:  $main-green;
+                }
+                .wc-block-components-address-form-wrapper{
+                    .wc-block-components-address-form{
+                        .wc-block-components-text-input{
+                            input{
+                                border-radius: 8px;
+                                background: $text-area;
+                                color: $main-green;
+                                border: none;
+                            }
+                            label{
+                                font-size: 12px;
+                                font-family: Geologica;
+                                font-weight: 400;
+                                color:  $gray;
+                            }
+                        }
+                        .wc-block-components-address-form__country,
+                        .wc-block-components-combobox{
+                            label{
+                                font-size: 12px;
+                                font-family: Geologica;
+                                font-weight: 400;
+                                color:  $gray;
+                            }
+                            input{
+                                border: none;
+                                border-radius: 8px;
+                                background: $text-area;
+                                color: $main-green;
+                            }
+                        }
+                    }
+                }
+                .wc-block-components-address-card{
+                    border: none;
+                    padding: 0;
+                    address{
+                        .wc-block-components-address-card__address-section{
+                            font-size: 22px;
+                            font-family: Geologica;
+                            line-height: 27px;
+                            font-weight: 400;
+                            color:   $main-green;
+                        }
+                        span{
+                            font-size: 14px;
+                            font-family: Geologica;
+                            line-height: 27px;
+                            font-weight: 400;
+                            color:   $gray;
+                        }
+
+                    }
+                    .wc-block-components-address-card__edit{
+                        text-decoration: none;
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 400;
+                        color:  $main-green;
+                        border-bottom: 1px solid $main-green;
+                    }
+                }
+            }
+        }
+
+        .wc-block-checkout__shipping-option{
+            padding: 0;
+            .wc-block-components-checkout-step__heading{
+                h2 {
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 27px;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                h2::before{
+                    display: none;
+                }
+            }
+            .wc-block-components-checkout-step__description{
+                margin: 0;
+                margin-top: 30px;
+                font-size: 14px;
+                font-family: Geologica;
+                line-height: 14px;
+                font-weight: 400;
+                color:  $main-green;
+            }
+            .wc-block-components-shipping-rates-control__package{
+                margin: 0;
+                margin-top: 12px;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 400;
+                color:  $gray;
+                .wc-block-components-radio-control{
+                    .wc-block-components-radio-control__option{
+                        border: none;
+                        input{
+                            border-radius: 50%;
+                            border: 1px solid $main-green;
+                            background: $container-black;
+                        }
+                        input::before{
+                            background:  $main-green;
+                        }
+                        .wc-block-components-radio-control__option-layout{
+                            font-size: 22px !important;
+                            line-height: 14px;
+                            font-weight: 400;
+                            color:  $main-green;
+                        }
+                    }
+                }
+            }
+        }
+        .wc-block-checkout__payment-method{
+            padding: 0;
+            margin-top: 44px;
+            .wc-block-components-checkout-step__heading{
+                margin: 0;
+                h2 {
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 27px;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                h2::before{
+                    display: none;
+                }
+            }
+            .wc-block-components-checkout-step__container{
+                .wc-block-components-checkout-step__description{
+                    margin: 0;
+                    margin-top: 30px;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 14px;
+                    font-weight: 400;
+                    color:  $main-green;
+                }
+            }
+            .wc-block-components-checkout-step__content{
+                padding: 0;
+                .wc-block-components-radio-control{
+                    border: none;
+                    margin-top: 12px;
+                    .wc-block-components-radio-control-accordion-option{
+                        border: none;
+                        .wc-block-components-radio-control__option{
+                            input{
+                                border-radius: 50%;
+                                border: 1px solid $main-green;
+                                background: $container-black;
+                            }
+                            input::before{
+                                background:  $main-green;
+                            }
+                            .wc-block-components-radio-control__option-layout{
+                                font-size: 22px;
+                                line-height: 14px;
+                                font-weight: 400 !important;
+                                color:  $main-green;
+                            }
+                        }
+                        .wc-block-components-radio-control-accordion-content{
+                            font-size: 14px;
+                            line-height: 14px;
+                            font-weight: 400;
+                            color:  $gray;
+                        }
+                    }
+                }
+            }
+        }
+        .wc-block-checkout__order-notes{
+            .wc-block-checkout__add-note{
+                margin: 0;
+                margin-top: 30px;
+                .wc-block-components-checkbox{
+                    margin: 0;
+                    label{
+                        display: flex;
+                        align-items: center;
+                        input{
+                            border-radius: 50%;
+                            border: 1px solid $main-green;
+                            background: $container-black;
+                        }
+                        svg{
+                            color: $main-green !important;
+                            fill: $main-green !important;
+                            top: 0;
+                            @media (max-width: 330px) {
+                                top: 4px;
+                            }
+                        }
+                        span{
+                            font-size: 14px;
+                            font-family: Geologica;
+                            line-height: 14px;
+                            font-weight: 400;
+                            color:  $main-green;
+                        }
+                    }                   
+                }
+                .wc-block-components-textarea{
+                    height: 76px;
+                    background: $text-area;
+                    border-radius: 8px;
+                    color: $main-green;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 14px;
+                    font-weight: 400;
+                    &::placeholder {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+        .wc-block-checkout__terms{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            margin-top: 12px;
+            color: $main-green;
+            font-size: 12px;
+            font-family: Geologica;
+            line-height: 18px;
+            font-weight: 400;
+            color: $agree-terms;
+            @media (max-width: $tablet) {
+                margin-bottom: 36px;
+            }
+        }
+
+        .wc-block-checkout__actions_row{
+            @media (max-width: $mobileSmall) {
+                display: flex;
+                flex-direction: column;
+            }
+            .wc-block-components-checkout-return-to-cart-button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 220px;
+                width: 100%;
+                border: 1px solid $main-green;
+                border-radius: 8px;
+                height: 42px;
+                text-decoration: none;
+                color: $main-green;
+                font-size: 14px;
+                font-family: Geologica;
+                line-height: 17px;
+                font-weight: 600;
+                svg{
+                    left: 15px;
+                }
+                @media (max-width: $mobileSmall) {
+                    max-width: 550px;
+                    width: 100%;
+                    svg{
+                        position: static;
+                        margin-top: 23px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .components-button{
+                border: none;
+                height: 42px;
+                background: $main-green;
+                border-radius: 8px;
+                color: $white;
+                font-size: 14px;
+                font-family: Geologica;
+                line-height: 17px;
+                font-weight: 400;
+                @media (max-width: $mobileSmall) {
+                    margin-top: 22px;
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+
+    .wc-block-components-sidebar{
+        margin: 0 !important;
+        padding: 32px 24px 0;
+        background: $container-black;
+        border-radius: 16px;
+
+        .wp-block-woocommerce-checkout-order-summary-block{
+            .wp-block-woocommerce-checkout-order-summary-cart-items-block{
+                padding: 0 !important;
+
+                .wc-block-components-order-summary {
+                    padding: 0;
+
+                    .wc-block-components-panel__button{
+                        padding: 0;
+                        margin: 0;
+                        span{
+                            font-size: 22px;
+                            font-family: Geologica;
+                            line-height: 27px;
+                            font-weight: 400;
+                            color:  $gray;
+                        }
+                        svg{
+                            color:  $main-green;
+                        }
+                    }
+                }
+                .wc-block-components-panel__content{
+                    margin-top: 32px;
+
+                    .wc-block-components-order-summary__content{
+                        .wc-block-components-order-summary-item{
+                            border-bottom: 1px solid $hr-color;
+                            margin-bottom: 32px;
+                            .wc-block-components-order-summary-item__image{
+                                margin: 0;
+
+                                .wc-block-components-order-summary-item__quantity{
+                                    border: 1px solid $main-green;
+                                    background: $container-black;
+                                    box-shadow: none;
+                                    span{
+                                        font-size: 16px;
+                                        font-family: Geologica;
+                                        line-height: 19px;
+                                        font-weight: 400;
+                                        color:  $main-green;
+                                    }
+                                }
+                            }
+                            .wc-block-components-order-summary-item__description{
+                                padding: 0 0 32px 28px;
+                                .wc-block-components-product-name{
+                                    font-size: 20px;
+                                    font-family: Geologica;
+                                    line-height: 26px;
+                                    font-weight: 600;
+                                    color:  $main-green;
+                                }
+                                .wc-block-components-order-summary-item__individual-prices{
+                                    padding: 0;
+                                    margin: 0;
+                                    margin-top: 22px;
+                                    font-size: 22px;
+                                    font-family: Geologica;
+                                    line-height: 22px;
+                                    font-weight: 400;
+                                    color:  $main-green;
+                                    del{
+                                        color:  $date-gray;
+                                    }
+                                    ins{
+                                        margin-left: 8px;
+                                    }
+                                }
+
+                                .wc-block-components-product-metadata{
+                                    margin: 0;
+                                    margin-top: 22px;
+                                    .wc-block-components-product-metadata__description{
+                                        font-size: 14px;
+                                        font-family: Geologica;
+                                        line-height: 18px;
+                                        font-weight: 400;
+                                        color:  $gray;
+                                        p{
+                                            margin: 0;
+                                        }
+                                    }
+                                    .wc-block-components-product-details{
+                                        margin: 0;
+                                        li{
+                                            .wc-block-components-product-details__name{
+                                                font-size: 14px;
+                                                font-family: Geologica;
+                                                line-height: 18px;
+                                                font-weight: 400;
+                                                color:  $gray;
+                                            }
+                                            .wc-block-components-product-details__value{
+                                                font-size: 14px;
+                                                font-family: Geologica;
+                                                line-height: 18px;
+                                                font-weight: 400;
+                                                color:  $main-green;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                            .wc-block-components-order-summary-item__total-price{
+                                height: 60px;
+                                margin: 0;
+                                .price {
+                                    font-size: 22px;
+                                    font-family: Geologica;
+                                    line-height: 22px;
+                                    font-weight: 400;
+                                    color: $main-green;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .wp-block-woocommerce-checkout-order-summary-coupon-form-block,
+            .wp-block-woocommerce-checkout-order-summary-fee-block,
+            .wp-block-woocommerce-checkout-order-summary-discount-block{
+                display: none;
+            }
+            .wp-block-woocommerce-checkout-order-summary-subtotal-block{
+                border-bottom: 1px solid $hr-color;
+                margin-bottom: 32px;
+                padding: 0 0 32px !important;
+                .wc-block-components-totals-item{
+                    padding: 0;
+                    .wc-block-components-totals-item__label{
+                        font-size: 16px;
+                        font-family: Geologica;
+                        line-height: 32px;
+                        font-weight: 400;
+                        color: $gray;
+                    }
+                    .wc-block-formatted-money-amount{
+                        font-size: 22px;
+                        font-family: Geologica;
+                        line-height: 32px;
+                        font-weight: 400;
+                        color: $main-green;
+                    }
+                }
+            }
+            .wp-block-woocommerce-checkout-order-summary-shipping-block{
+                border-bottom: 1px solid $hr-color;
+                margin-bottom: 32px;
+
+                .wc-block-components-totals-item__value{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 16px;
+                    font-weight: 400;
+                    color:  $gray;
+                    em{
+                        font-style: normal;
+                    }
+                }
+                .wc-block-components-totals-item__description{
+                    .wc-block-components-totals-shipping__via{
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 16px;
+                        font-weight: 400;
+                        color:  $main-green;
+                    }
+                    .wc-block-components-shipping-address{
+                        margin-top: 8px;
+                        font-size: 14px;
+                        font-family: Geologica;
+                        line-height: 14px;
+                        font-weight: 400;
+                        color:  $gray;
+                    }
+                }
+            }
+            .wc-block-components-totals-wrapper{
+                padding: 0 0 32px;
+                .wc-block-components-totals-item{
+                    padding: 0;
+                    .wc-block-components-totals-item__label{
+                        font-size: 16px;
+                        font-family: Geologica;
+                        line-height: 32px;
+                        font-weight: 400;
+                        color: $gray;
+                    }
+                    .wc-block-formatted-money-amount{
+                        font-size: 26px;
+                        font-family: Geologica;
+                        line-height: 32px;
+                        font-weight: 400;
+                        color: $main-green; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+

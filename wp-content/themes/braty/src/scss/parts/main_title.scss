@@ -1,0 +1,20 @@
+.main-title{
+    .container{
+        width: $main-width;
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+
+        h2 {
+            margin: 0;
+            margin-top: 32px;
+            margin-bottom: -116px;
+            font-size: 32px ;
+            font-family: 'Geologica', sans-serif ;
+            font-weight: 400;
+            color: $main-green;
+            line-height: 28px;
+            text-transform: uppercase;
+        }
+    }
+}

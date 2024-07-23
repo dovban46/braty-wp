@@ -1,0 +1,54 @@
+body {
+    background-color: #111111 !important; 
+}
+
+@import "./parts/variables.scss";
+@import "./parts/header.scss";
+@import "./parts/navigation.scss";
+@import "./parts/single-product.scss";
+@import "./parts/hero.scss";
+@import "./parts/action.scss";
+@import "./parts/popular.scss";
+@import "./parts/category.scss";
+@import "./parts/client_comment.scss";
+@import "./parts/about.scss";
+@import "./parts/question.scss";
+@import "./parts/about_pizza.scss";
+@import "./parts/taxonomy_product_cat.scss";
+@import "./parts/subcategory-cat.scss";
+@import "./parts/footer.scss";
+@import "./parts/main_title.scss";
+@import "./parts/cart.scss";
+@import "./parts/checkout.scss";
+@import "./parts/order_received.scss";
+@import "./parts/login.scss";
+@import "./parts/account.scss";
+@import "./parts/search.scss";
+
+.nav-title-page{
+    .container{
+        width: $main-width;
+        margin-top: 32px;
+
+        .woocommerce-breadcrumb{
+            font-size: 16px;
+            font-family: Geologica;
+            line-height: 18px;
+            font-weight: 400;
+            color: $gray;
+
+            a, .breadcrumb-delimiter {
+                text-decoration: none;
+                font-size: 16px;
+                font-family: Geologica;
+                line-height: 18px;
+                font-weight: 400;
+                color: $nav-title;
+            }
+        }
+
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+}

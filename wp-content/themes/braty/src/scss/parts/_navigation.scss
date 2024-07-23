@@ -1,0 +1,54 @@
+.navigation {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    .container{
+        width: $main-width;
+    }
+    .custom-container{
+        background-color: $container-black;
+        padding: 28px;
+        border-radius: 16px;
+        max-width: 100%;
+        height: 96px;
+    }
+    .custom-btn {
+        text-decoration: none;
+        width: 259px;
+        background-color: $comment-empty-star;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        color: $white;
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0 8px;
+
+        .icon {
+            width: 19px;
+            height: 19px;
+            margin-right: 8px;
+        }
+        
+    }
+    @media (max-width: $mobile) {
+        .custom-container {
+            flex-direction: column;
+            height: auto;
+        }
+    
+        .custom-btn {
+            width: 100%;
+            margin: 12px 0;
+        }
+    }
+    @media (max-width: $mobileSmall) {
+        .container {
+            width: 100%;
+        }
+    }
+
+}

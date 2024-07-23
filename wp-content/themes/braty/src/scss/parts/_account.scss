@@ -1,0 +1,719 @@
+.woocommerce{
+    .account-icon{
+        a{
+            text-decoration: none;
+            p{
+                margin: 0;
+                font-size: 32px ;
+                font-family: 'Geologica', sans-serif ;
+                font-weight: 400;
+                color: $main-green;
+                line-height: 31px;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-navigation{
+        ul{
+            padding: 0;
+            margin: 0;
+            margin-top: 22px;
+            list-style: none;
+
+            li{
+                padding: 11px 16px;
+                margin-bottom: 14px;
+                display: flex;
+                justify-content: center;
+				background: $container-black;
+				border-radius: 8px;
+				align-items: center;
+                height: 40px;
+                max-width: 284px;
+                @media (max-width: $tablet) {
+                    max-width: 516px;
+                }
+
+                a{
+                    margin-right: auto;
+                    text-decoration: none;
+                    color: $gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                }
+            }
+            .is-active{
+                background: $text-area;
+            }
+            .woocommerce-MyAccount-navigation-link--dashboard{
+                display: none;
+            }
+            .woocommerce-MyAccount-navigation-link{
+                background-repeat: no-repeat;
+                background-position: calc(100% - 8px) center;
+                background-size: 24px 24px;
+                
+                &--orders{
+                    background-image: url('../assets/images/admin-history.svg');
+                }
+                &--edit-address{
+                    background-image: url('../assets/images/location.svg');
+                }
+                &--edit-account{
+                    background-image: url('../assets/images/admin-account.svg');
+                }
+                &--customer-logout{
+                    background-image: url('../assets/images/logout.svg');
+                }   
+                &--downloads{
+                    background-image: url('../assets/images/downloads.svg');
+                }   
+            }
+        }
+    }
+
+    .woocommerce-MyAccount-content{
+        .woocommerce-info{
+            display: none;
+        }
+        p{
+            font-size: 22px ;
+            font-family: 'Geologica', sans-serif ;
+            font-weight: 400;
+            color: $gray;
+            line-height: 22px;
+
+            strong{
+                font-weight: 400;
+            }
+            a{
+                color: $main-green;
+            }
+        }
+        .woocommerce-orders-table{
+            margin: 0;
+            color: $gray;
+            font-size: 14px ;
+            font-family: 'Geologica', sans-serif ;
+            font-weight: 400;
+            line-height: 18px;
+            border: none;
+            border-collapse: collapse; 
+            border-spacing: 0;
+            thead{
+                background: $container-black;
+                overflow: hidden;
+
+                tr {
+                    th {
+                        padding: 12px 32px;
+                    }
+            
+                    &:first-child th:first-child {
+                        border-top-left-radius: 8px;
+                    }
+            
+                    &:first-child th:last-child {
+                        border-top-right-radius: 8px;
+                    }
+            
+                    &:last-child th:first-child {
+                        border-bottom-left-radius: 8px; 
+                    }
+            
+                    &:last-child th:last-child {
+                        border-bottom-right-radius: 8px; 
+                    }
+                }
+            }
+            tbody{
+                tr{
+
+                    td{
+
+                        padding: 12px 32px;
+                        margin: 12px 0;
+                        height: 66px;
+                        border-bottom: 1px solid $hr-color;
+                    }
+                    td::before{
+                        background: $container-black;
+                        border-radius: 8px;
+                        width: 25%;
+                        height: 42px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .woocommerce-orders-table__cell-order-number{
+                        a{
+                            text-decoration: none;
+                            color: $gray;
+                            font-size: 14px ;
+                            font-family: 'Geologica', sans-serif ;
+                            font-weight: 400;
+                            line-height: 18px;
+                        }
+                    }
+                    .woocommerce-orders-table__cell-order-actions{
+                        a{
+                            background: $black;
+                            color: $main-green;
+                            font-size: 14px ;
+                            font-family: 'Geologica', sans-serif ;
+                            font-weight: 400;
+                            line-height: 18px;
+                            background-image: url('../assets/images/Arrow-right.svg');
+                            background-repeat: no-repeat;
+                            background-position: calc(100% - 6px) center;
+                            padding-right: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .woocommerce-order-details{
+            margin: 0;
+            margin-top: 22px;
+            border-radius: 16px;
+            background: $container-black;
+            padding: 32px;
+
+            h2{
+                margin: 0;
+                font-size: 22px;
+                font-family: Geologica;
+                line-height: 22px;
+                color: $gray;
+            }
+            table{
+                border: none;
+                margin-top: 44px;
+                font-size: 14px;
+                font-family: Geologica;
+                line-height: 20px;
+                font-weight: 400;
+                color: $gray;
+                border-collapse: separate;
+                border-spacing: 0; 
+
+                thead {
+                    background: $text-area;
+                    border-radius: 8px;
+                    overflow: hidden;
+                
+                    tr {
+                        th {
+                            padding: 12px 32px;
+                        }
+                
+                        &:first-child th:first-child {
+                            border-top-left-radius: 8px;
+                        }
+                
+                        &:first-child th:last-child {
+                            border-top-right-radius: 8px;
+                        }
+                
+                        &:last-child th:first-child {
+                            border-bottom-left-radius: 8px; 
+                        }
+                
+                        &:last-child th:last-child {
+                            border-bottom-right-radius: 8px; 
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            padding: 12px 32px;
+                            @media (max-width: $mobile) {
+                                padding: 12px 10px;
+                            }
+                            
+                        }
+                        .woocommerce-table__product-name{
+                            position: relative; 
+                            color: $main-green;
+                            a{
+                                color: $main-green;
+                                text-decoration: none;
+                            }
+                            strong{
+                                position: absolute; 
+                                left: 200px;
+                                @media (max-width: $tablet) {
+                                    position: static;
+                                }
+                            }
+                        }
+                    }
+                }
+                tfoot{
+                    tr{
+                        td,
+                        th{
+                            border: none;
+                            padding: 12px 32px;
+                            @media (max-width: $mobile) {
+                                padding: 12px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .woocommerce-customer-details{
+            margin: 0;
+            margin-top: 22px;
+            border-radius: 16px;
+            background: $container-black;
+            padding: 32px;
+            h2{
+                background-image: url('../assets/images/location.svg');
+                background-repeat: no-repeat;
+                padding-left: 32px;
+                margin: 0;
+                font-size: 22px;
+                font-family: Geologica;
+                line-height: 22px;
+                color: $gray;
+            }
+            address{
+                margin: 0;
+                padding: 0;
+                margin-top: 44px;
+                font-size: 16px;
+                font-family: Geologica;
+                line-height: 28px;
+                color: gray;
+                border: none;
+
+                span{
+                    margin-bottom: 20px;
+                }
+
+                .woocommerce-customer-details--phone,
+                .woocommerce-customer-details--email{
+                    display: none;
+                }
+            }
+        }
+
+
+        .u-columns{
+            margin: 0;
+            margin-top: 22px;
+            padding: 66px 32px;
+
+            .woocommerce-Address-title{
+                h3{
+                    background-image: url('../assets/images/location.svg');
+                    background-repeat: no-repeat;
+                    padding-left: 32px;
+                    margin: 0;
+                    font-size: 22px;
+                    font-family: Geologica;
+                    line-height: 22px;
+                    color: $gray;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 14px;
+                    font-weight: 400;
+                    color:  $main-green;
+                    border-bottom: 1px solid $main-green;
+                }
+            }
+
+            address{
+                margin: 0;
+                padding: 0;
+                padding-left: 32px;
+                margin-top: 44px;
+                font-size: 16px;
+                font-family: Geologica;
+                line-height: 28px;
+                color: gray;
+                border: none;
+
+                span{
+                    margin-bottom: 20px;
+                }
+                .woocommerce-customer-details--phone,
+                .woocommerce-customer-details--email{
+                    display: none;
+                }
+            }
+        }
+
+        .tinv-header{
+            margin: 0;
+            font-size: 22px;
+            font-family: Geologica;
+            line-height: 22px;
+            color: $gray;
+            font-weight: 400;
+        }
+        .return-to-shop{
+            a{
+                padding: 12px 32px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                height: 40px;
+                background: $main-green ;
+                color: $white;
+            }
+        }
+        form{
+            border-radius: 16px;
+            background: $container-black;
+            .tinvwl-table-manage-list{
+                margin: 0;
+                margin-top: 22px;
+                color: $gray;
+                font-size: 14px ;
+                font-family: 'Geologica', sans-serif ;
+                font-weight: 400;
+                line-height: 18px;
+                border: none;
+                border-collapse: collapse; 
+                border-spacing: 0;
+                background: $container-black;
+                thead {
+                    background: $text-area;
+                    border-radius: 8px;
+                    overflow: hidden;
+                
+                    tr {
+                        th {
+                            padding: 12px 12px;
+                        }
+                
+                        &:first-child th:first-child {
+                            border-top-left-radius: 8px;
+                        }
+                
+                        &:first-child th:last-child {
+                            border-top-right-radius: 8px;
+                        }
+                
+                        &:last-child th:first-child {
+                            border-bottom-left-radius: 8px; 
+                        }
+                
+                        &:last-child th:last-child {
+                            border-bottom-right-radius: 8px; 
+                        }
+                    }
+                }
+                tbody{ 
+                    tr{
+                        td{
+                            padding: 12px 12px;
+                            margin: 12px 0;
+                            height: 66px;
+                            border-bottom: 1px solid $hr-color;
+                        }
+                        .product-remove{
+                            button{
+                                padding: 0;
+                                background: $black;
+                                border: 1px solid $main-green;
+                                i{
+                                    color: $main-green;
+                                    font-weight: 400;
+                                    font-size: 28px;
+                                }
+                            }
+                        }
+                        .product-thumbnail{
+                            padding: 10px 10px;
+                            @media (max-width: $mobile) {
+                                img{
+                                    height: 100%;
+                                    width: auto;
+                                }
+                            }
+                        }
+                        .product-name{
+                            a{
+                                text-decoration: none;
+                                font-size: 18px;
+                                font-family: Geologica;
+                                line-height: 18px;
+                                font-weight: 400;
+                                color: $main-green;
+                            }
+                        }
+                        .product-price{
+                            color: $main-green;
+                            del{
+                                color: $date-gray;
+                                margin-right: 12px;
+                            }
+                            ins{
+                                text-decoration: none;
+                            }
+                        }
+                        .product-date{
+                            .entry-date{
+                                color: $date-gray;
+                            }
+                        }
+                        .product-stock{
+                            @media (max-width: $mobile) {
+                                display: flex;
+                                justify-content: center;
+                            }
+                            p{
+                                margin: 0;
+                                font-size: 14px ;
+                                font-family: 'Geologica', sans-serif ;
+                                font-weight: 400;
+                                line-height: 18px;
+                                span{
+                                    i{
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        .product-action{
+                            button{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 8px;
+                                height: 40px;
+                                background: $main-green ;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+                tfoot{
+                    tr{
+                        td{
+                            .tinvwl-to-left{
+                                select{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 8px;
+                                    background: $container-black;
+                                    color: $main-green;
+                                    border: 1px solid $main-green;
+                                }
+                                span{
+                                    button{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 8px;
+                                        height: 40px;
+                                        background: $main-green;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                            .tinvwl-to-right{
+                                button{
+                                    border-radius: 8px;
+                                    height: 40px;
+                                    background: $main-green;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            h3{
+                margin: 0;
+                font-size: 22px;
+                font-family: Geologica;
+                line-height: 22px;
+                color: $gray;
+            }
+            .woocommerce-address-fields{
+                margin-top: 28px;
+
+                .woocommerce-address-fields__field-wrapper{
+                    .form-row{
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 16px;
+                        label{
+                            font-size: 14px;
+                            line-height: 14px;
+                            font-family: Geologica;
+                            font-weight: 600;
+                            color:  $main-green;
+                        }
+                        .woocommerce-input-wrapper{
+                            input,
+                            .select2-selection--single{
+                                display: flex;
+                                align-items: center;
+                                height: 36px;
+                                padding: 10px 12px;
+                                margin-top: 12px;
+                                border: none;
+                                border-radius: 8px;
+                                font-size: 14px;
+                                line-height: 16px;
+                                font-family: Geologica;
+                                font-weight: 400;
+                                background: $text-area;
+                                color: $main-green;
+                            }
+                            .select2-selection__rendered{
+                                padding: 0;
+                            }
+                            .select2-selection__arrow{
+                                top: 15px;
+                                right: 10px;
+                            }
+                        }
+                    }
+                }
+                .button{
+                    margin: 0;
+                    margin-top: 44px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid $main-green;
+                    border-radius: 8px;
+                    height: 36px;
+                    width: 100%;
+                    text-decoration: none;
+                    color: $main-green;
+                    background: $container-black;
+                    font-size: 14px;
+                    font-family: Geologica;
+                    line-height: 16px;
+                    font-weight: 400;
+                    @media (min-width: $tablet) {
+                        max-width: 195px;
+                    }
+                }
+            }
+        }
+
+
+        .woocommerce-EditAccountForm{
+            .woocommerce-form-row{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 16px;
+                label{
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-family: Geologica;
+                    font-weight: 600;
+                    color:  $main-green;
+                }
+                .woocommerce-Input{
+                    display: flex;
+                    align-items: center;
+                    height: 36px;
+                    padding: 10px 12px;
+                    margin-top: 12px;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-family: Geologica;
+                    font-weight: 400;
+                    background: $text-area;
+                    color: $main-green;
+                }
+                em{
+                    margin-top: 8px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    font-family: Geologica;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+            }
+            fieldset{
+                legend{
+                    margin-top: 44px;
+                    margin-bottom: 22px;
+                    font-size: 22px;
+                    line-height: 14px;
+                    font-family: Geologica;
+                    font-weight: 400;
+                    color:  $gray;
+                }
+                .woocommerce-form-row{
+                    @media (min-width: $tablet) {
+                        max-width: 367px;
+                    }
+                    .show-password-input{
+                        margin-top: 6px;
+                    }
+                    .show-password-input::after{
+                        color: $main-green !important;
+                    }
+
+                    .woocommerce-password-strength{
+                        margin: 0;
+                        margin-top: 8px;
+                        border-radius: 8px;
+                        font-size: 18px ;
+                        font-family: 'Geologica', sans-serif ;
+                        font-weight: 400;
+                        line-height: 32px;
+                    }
+                    .bad{
+                        background: #F44336;
+                        color: $white;
+                    }
+                    .good{
+                        background: #c0ad1a;
+                        color: $white;
+                    }
+                    .strong{
+                        background:  $main-green ;
+                        color: $white;
+                    }
+                }
+            }
+            .button{
+                margin: 0;
+                margin-top: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $main-green;
+                border-radius: 8px;
+                height: 36px;
+                width: 100%;
+                text-decoration: none;
+                color: $main-green;
+                background: $container-black;
+                font-size: 14px;
+                font-family: Geologica;
+                line-height: 16px;
+                font-weight: 400;
+                @media (min-width: $tablet) {
+                    max-width: 195px;
+                }
+            }
+        }
+    }
+}
